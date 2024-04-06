@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/essus-social-media/static/js/main.c5ec52ec.js",
+    "index.html": "/essus-social-media/index.html",
+    "main.c5ec52ec.js.map": "/essus-social-media/static/js/main.c5ec52ec.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c5ec52ec.js"
+  ]
+}
