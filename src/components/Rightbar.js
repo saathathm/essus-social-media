@@ -14,6 +14,36 @@ import {
 import React from "react";
 
 export default function Rightbar() {
+  const avatars = [
+    {
+      img: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+      title: "Trevor Henderson",
+    },
+    {
+      img: "https://www.shutterstock.com/image-photo/young-goodlooking-chap-smiling-gorgeous-600nw-1674375652.jpg",
+      title: "Agnes Walker",
+    },
+    {
+      img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg",
+      title: "Cindy Baker",
+    },
+    {
+      img: "https://static.vecteezy.com/system/resources/thumbnails/041/151/800/small_2x/ai-generated-portrait-of-a-young-handsome-italian-man-in-a-black-suit-standing-in-an-arched-corridor-and-looking-at-camera-photo.jpg",
+      title: "Travis Howard",
+    },
+    {
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/615px-Outdoors-man-portrait_%28cropped%29.jpg",
+      title: "Remy Sharp",
+    },
+    {
+      img: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=0hb44OrI",
+      title: "Johny",
+    },
+    {
+      img: "https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg",
+      title: "Tom",
+    },
+  ];
   const itemData = [
     {
       img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
@@ -51,14 +81,9 @@ export default function Rightbar() {
           Online Friends
         </Typography>
         <AvatarGroup max={7}>
-          <Avatar alt="Remy Sharp" src="/images/1.avif" />
-          <Avatar alt="Travis Howard" src="/images/2.png" />
-          <Avatar alt="Cindy Baker" src="/images/3.png" />
-          <Avatar alt="Agnes Walker" src="" />
-          <Avatar alt="Agnes Walker" src="/images/5.jpg" />
-          <Avatar alt="Agnes Walker" src="/images/6.png" />
-          <Avatar alt="Trevor Henderson" src="/images/7.jpg" />
-          <Avatar alt="Trevor Henderson" src="/images/8.jpg" />
+          {avatars.map((avatar) => (
+            <Avatar alt={avatar.title} src={avatar.img} />
+          ))}
         </AvatarGroup>
 
         <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
@@ -82,7 +107,7 @@ export default function Rightbar() {
         >
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/images/7.jpg" />
+              <Avatar alt="Johny" src={avatars[6].img} />
             </ListItemAvatar>
             <ListItemText
               primary="Brunch this weekend?"
@@ -104,7 +129,7 @@ export default function Rightbar() {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Travis Howard" src="/images/1.avif" />
+              <Avatar alt="Trevor Henderson" src={avatars[0].img} />
             </ListItemAvatar>
             <ListItemText
               primary="Summer BBQ"
@@ -126,7 +151,7 @@ export default function Rightbar() {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Cindy Baker" src="/images/6.png" />
+              <Avatar alt="Remy Sharp" src={avatars[5].img} />
             </ListItemAvatar>
             <ListItemText
               primary="Oui Oui"

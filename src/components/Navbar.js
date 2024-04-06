@@ -68,14 +68,14 @@ export default function Navbar() {
           </Badge>
           <Avatar
             sx={{ width: "30px", height: "30px" }}
-            src="/images/saadh.jpeg"
+            src="https://www.realmenrealstyle.com/wp-content/uploads/2023/06/Vanity-Glasses.jpg"
             onClick={(e) => setOpen(true)}
           />
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
           <Avatar
             sx={{ width: "30px", height: "30px" }}
-            src="/images/saadh.jpeg"
+            src="https://www.realmenrealstyle.com/wp-content/uploads/2023/06/Vanity-Glasses.jpg"
           />
           <Typography variant="span">Saadhath</Typography>
         </UserBox>
