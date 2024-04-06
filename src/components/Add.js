@@ -70,7 +70,10 @@ export default function Add() {
             Create post
           </Typography>
           <UserBox>
-            <Avatar src="/images/saadh.jpeg" sx={{ width: 30, height: 30 }} />
+            <Avatar
+              src="https://www.realmenrealstyle.com/wp-content/uploads/2023/06/Vanity-Glasses.jpg"
+              sx={{ width: 30, height: 30 }}
+            />
             <Typography fontWeight={500} variant="span">
               Mohamed Sa Aadhath
             </Typography>
