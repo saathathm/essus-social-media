@@ -10,7 +10,6 @@ import {
   Toolbar,
   Typography,
   styled,
-  useTheme,
 } from "@mui/material";
 import { useState } from "react";
 
@@ -48,7 +47,6 @@ export default function Navbar() {
   }));
 
   const [open, setOpen] = useState(false);
-  const theme = useTheme();
   return (
     <AppBar position="sticky">
       <StyledToolbar>
